@@ -1,3 +1,7 @@
+// Style
+import '../../styles/error-page.scss'
+
+
 function Error() {
     return (
       <h1>Page d'erreur 404</h1>

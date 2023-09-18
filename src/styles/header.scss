@@ -1,0 +1,29 @@
+$primary-color : #FF6060;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 100px;
+
+    &_logo {
+        height: 68px;
+        width: auto;
+    }
+
+    &_nav {
+        display: flex;
+        column-gap: 65px;
+    }
+
+    &_link {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    &_selected-link {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+    }
+}

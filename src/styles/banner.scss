@@ -1,0 +1,38 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 223px;
+
+    &_image {
+        display: block;
+        position: absolute;
+        order: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    &_darken {
+        position: absolute;
+        order: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+    }
+
+    &_title {
+        position: absolute;
+        order: 1;
+        font-size: 48px;
+        color: white;
+    }
+}
