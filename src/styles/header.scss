@@ -4,7 +4,7 @@ $primary-color : #FF6060;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 100px;
+    padding: 45px 0;
 
     &_logo {
         height: 68px;
@@ -16,13 +16,16 @@ $primary-color : #FF6060;
         column-gap: 65px;
     }
 
-    &_link {
+    &_not-selected-link {
         color: $primary-color;
         text-decoration: none;
         font-size: 24px;
     }
 
     &_selected-link {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 24px;
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
     }

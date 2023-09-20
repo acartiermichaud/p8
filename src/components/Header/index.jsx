@@ -5,21 +5,21 @@ import {Link} from 'react-router-dom'
 import '../../styles/header.scss'
 
 //Image
-import HomeLogo from '../../assets/home-logo.png'
+import homeLogo from '../../assets/home-logo.png'
 
 
-function Header() {
-    return (
-      <div className='header'>
-        <Link to='/'>
-          <img className='header_logo' src={HomeLogo} alt='Logo de Kasa'/>
-        </Link>
-        <div className='header_nav'>
-          <Link className='header_link header_selected-link' to='/'>Accueil</Link>
-          <Link className='header_link' to='/a-propos'>A Propos</Link>
-        </div>
+function Header({homeLink, aProposLink}) {
+  return (
+    <div className='header'>
+      <Link to='/'>
+        <img className='header_logo' src={homeLogo} alt='Logo de Kasa'/>
+      </Link>
+      <div className='header_nav'>
+        <Link className={homeLink} to='/'>Accueil</Link>
+        <Link className={aProposLink} to='/a-propos'>A Propos</Link>
       </div>
-    )
-  }
-  
-  export default Header
+    </div>
+  )
+}
+
+export default Header

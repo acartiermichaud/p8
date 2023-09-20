@@ -1,0 +1,27 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    box-sizing: border-box;
+    overflow: auto;
+    color : #FF6060;
+    text-align: center;
+
+    &_title {
+        font-size: 288px;
+        font-weight: 700;
+        padding: 50px 0;
+    }
+
+    &_txt {
+        font-size: 36px;
+        padding: 50px 0;
+    }
+
+    &_link {
+        font-size: 18px;
+        color : #FF6060;
+        text-decoration: underline;
+        padding: 100px 0 140px 0;
+    }
+}

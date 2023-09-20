@@ -1,0 +1,16 @@
+.a-propos-page {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.collapses-contener {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 110px 0 110px;
+    box-sizing: border-box;
+}
