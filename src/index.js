@@ -25,10 +25,10 @@ root.render(
       <div className='page-contener'>
         <div className='page'>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/a-propos" element={<APropos />} />
-            <Route path="/logement" element={<Logement />} />
-            <Route path="*" element={<Error />} />
+            <Route path="/" element={<Home />} errorElement={<Error />}/>
+            <Route path="/a-propos" element={<APropos />} errorElement={<Error />}/>
+            <Route path="/logement" element={<Logement />} errorElement={<Error />}/>
+            <Route path="*" element={<Error />} errorElement={<Error />}/>
           </Routes>
           <Footer />
         </div>
