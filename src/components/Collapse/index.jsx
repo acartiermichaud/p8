@@ -21,7 +21,7 @@ function Collapse({collapseTitle, collapseTxt}) {
           </div>   
       </div>
 
-      <p className='collapse_content' opened={isOpen ? "true" : "false"}>{collapseTxt}</p>
+      <div className='collapse_content' opened={isOpen ? "true" : "false"}>{collapseTxt}</div>
       
     </div>
   )
