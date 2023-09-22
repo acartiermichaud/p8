@@ -1,0 +1,15 @@
+.logement-page {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    box-sizing: border-box;
+    overflow: auto;
+    color : #FF6060;
+    text-align: center;
+}
+
+.fiche-logement {
+    display: flex;
+    flex-direction: column;
+    gap : 50px;
+}

@@ -1,3 +1,6 @@
+// React component
+import {Link} from 'react-router-dom'
+
 // Components
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
@@ -22,7 +25,9 @@ function Home() {
 
       <div className='accommodations'>
         {accomodations.map(({id, title, cover}) =>
-          <Card key={id} url={cover} alt={title} title={title}/>
+          <Link key={id} to={`/logement/${id}`}>
+            <Card url={cover} alt={title} title={title}/>
+          </Link>
         )}
       </div>
       
