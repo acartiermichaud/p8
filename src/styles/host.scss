@@ -1,3 +1,6 @@
+$primary-color : #FF6060;
+
+
 .host {
     display: flex;
     justify-content: right;
@@ -6,15 +9,25 @@
     width: 100%;
 
     &_name {
-        color: #FF6060;
+        color: $primary-color;
         font-size: 18px;
         line-height: 26px;
         text-align: right;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            line-height: 17px;
+        }
     }
 
     &_picture {
         width: 64px;
         height: 64px;
         border-radius: 50%;
+
+        @media (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 }

@@ -1,3 +1,6 @@
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/banner.scss'
 
@@ -10,6 +13,12 @@ function Banner ({url, alt, title}) {
       <h1 className='banner_title'>{title}</h1>
     </div>
   )
+}
+
+Banner.propTypes = {
+  url: PropTypes.string,
+  alt: PropTypes.string,
+  title: PropTypes.string
 }
   
 export default Banner

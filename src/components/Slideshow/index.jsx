@@ -1,6 +1,9 @@
 // React
 import React, {useState} from 'react';
 
+// PropTypes
+import PropTypes from 'prop-types'
+
 // React component
 import {Link} from 'react-router-dom'
 
@@ -25,6 +28,10 @@ function Slideshow({pictures}) {
         <p className='slideshow_page-numbers'>{total >= position && `${position}/${total}`}</p>
     </div>
   )
+}
+
+Slideshow.propTypes = {
+  pictures: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default Slideshow

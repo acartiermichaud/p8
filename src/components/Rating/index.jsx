@@ -1,3 +1,6 @@
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/rating.scss'
 
@@ -19,13 +22,16 @@ function ratingList (propRating) {
 
 
 function Rating({rating}) {
-
   return (
     <div className='rating'>
       {ratingList({rating}).map(([i,j]) => 
-        j===1 ? <img key={i} className='star' src={starOrange} alt="Étoile orange"></img> : <img key={i} className='star' src={starGrey} alt="Étoile grise"></img>)}
+        j===1 ? <img key={i} className='rating_star' src={starOrange} alt="Étoile orange"></img> : <img key={i} className='rating_star' src={starGrey} alt="Étoile grise"></img>)}
     </div>
   )
+}
+
+Rating.propTypes = {
+  rating: PropTypes.string
 }
   
 export default Rating

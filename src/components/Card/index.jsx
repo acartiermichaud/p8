@@ -1,3 +1,6 @@
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/card.scss'
 
@@ -10,6 +13,12 @@ function Card ({url, alt, title}) {
       <h1 className='card_title'>{title}</h1>
     </div>
   )
+}
+
+Card.propTypes = {
+  url: PropTypes.string,
+  alt: PropTypes.string,
+  title: PropTypes.string
 }
   
 export default Card

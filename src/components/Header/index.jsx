@@ -1,6 +1,9 @@
 // React component
 import {Link} from 'react-router-dom'
 
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/header.scss'
 
@@ -20,6 +23,11 @@ function Header({homeLink, aProposLink}) {
       </div>
     </div>
   )
+}
+
+Header.propTypes = {
+  homeLink: PropTypes.string,
+  aProposLink: PropTypes.string
 }
 
 export default Header

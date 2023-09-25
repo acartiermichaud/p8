@@ -9,10 +9,23 @@
     &_logo {
         width: 122px;
         padding: 35px 0 45px 0;
+
+        @media (max-width: 768px) {
+            width: 122px;
+            height: auto;
+            padding: 35px 0 10px 0;
+        }
     }
 
     &_txt {
         color: white;
         font-size: 24px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            width: 133px;
+            font-size: 12px;
+            padding-bottom: 30px;
+        }
     }
 }

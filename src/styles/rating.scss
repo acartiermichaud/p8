@@ -2,5 +2,16 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 15px
+    gap: 15px;
+
+    @media (max-width: 768px) {
+        gap: 7px;
+    }
+
+    &_star {
+        @media (max-width: 768px) {
+            height: 13px;
+            width: auto;
+        }
+    }
 }

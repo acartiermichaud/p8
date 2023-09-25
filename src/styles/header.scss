@@ -1,25 +1,51 @@
 $primary-color : #FF6060;
 
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 45px 0;
 
+    @media (max-width: 768px) {
+        padding: 15px 0;
+    }
+
     &_logo {
         height: 68px;
         width: auto;
+
+        @media (max-width: 768px) {
+            width: 145px;
+            height: auto;
+        }
+
+        @media (max-width: 340px) {
+            width: 100px;
+            height: auto;
+        }
     }
 
     &_nav {
         display: flex;
+        justify-content: right;
         column-gap: 65px;
+        width: 70%;
+
+        @media (max-width: 768px) {
+            column-gap: 13%;
+        }
     }
 
     &_not-selected-link {
         color: $primary-color;
         text-decoration: none;
         font-size: 24px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
     }
 
     &_selected-link {
@@ -28,5 +54,11 @@ $primary-color : #FF6060;
         font-size: 24px;
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration-thickness: 0.5px;
+        }
     }
 }

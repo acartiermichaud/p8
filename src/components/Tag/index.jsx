@@ -1,3 +1,6 @@
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/tag.scss'
 
@@ -9,6 +12,10 @@ function Tag({tagTxt}) {
       <p className='tag_txt'>{tagTxt}</p>
     </div>
   )
+}
+
+Tag.propTypes = {
+  tagTxt: PropTypes.string
 }
   
 export default Tag

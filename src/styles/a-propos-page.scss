@@ -3,6 +3,10 @@
     flex-direction: column;
     padding: 0 100px;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
 }
 
 .collapses-contener {
@@ -12,4 +16,8 @@
     width: 100%;
     padding: 40px 110px 0 110px;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        padding: 40px 0 0 0;
+    }
 }

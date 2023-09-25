@@ -1,6 +1,9 @@
 // React component
 import {useState} from 'react';
 
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/collapse.scss'
 
@@ -25,6 +28,11 @@ function Collapse({collapseTitle, collapseTxt}) {
       
     </div>
   )
+}
+
+Collapse.propTypes = {
+  collapseTitle: PropTypes.string,
+  collapseTxt: PropTypes.oneOfType([PropTypes.string, PropTypes.array])
 }
   
 export default Collapse

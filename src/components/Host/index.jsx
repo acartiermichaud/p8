@@ -1,3 +1,6 @@
+// PropTypes
+import PropTypes from 'prop-types'
+
 // Style
 import '../../styles/host.scss'
 
@@ -10,6 +13,10 @@ function Host({host}) {
       <img className='host_picture' src={host.picture} alt={host.name}></img>
     </div>
   )
+}
+
+Host.propTypes = {
+  host: PropTypes.objectOf(PropTypes.string)
 }
   
 export default Host
