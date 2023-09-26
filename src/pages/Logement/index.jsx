@@ -1,5 +1,6 @@
 // React
 import { useParams } from 'react-router-dom'
+import { Navigate } from "react-router-dom";
 
 // Components
 import Header from '../../components/Header'
@@ -20,41 +21,56 @@ function Logement() {
   const selectedId = useParams().id
   const selectedAccomodation = accomodations.filter((accomodation) => accomodation.id === selectedId)[0]
 
+  function checkId() {
+    if (selectedAccomodation !== undefined) {
+      return true
+    }
+    else {
+      return false
+    }
+  }
+  
+
   return (
-    <div className='logement-page'>
-      <Header homeLink='header_not-selected-link' aProposLink='header_not-selected-link'/>
+    <div>
+      {!checkId() && <Navigate to="/error" />}
 
-      <div className='fiche-logement'>
+      {checkId() &&
+        <div className='logement-page'>
+          <Header homeLink='header_not-selected-link' aProposLink='header_not-selected-link'/>
 
-        <Slideshow pictures={selectedAccomodation.pictures}/>
+          <div className='fiche-logement'>
 
-        <div className='main-contener'>
-          <div className='main-contener_left'>
-            <h1 className='main-contener_left_title'>{selectedAccomodation.title}</h1>
-            <p className='main-contener_left_location'>{selectedAccomodation.location}</p>
+            <Slideshow pictures={selectedAccomodation.pictures}/>
 
-            <div className='main-contener_left_tags'>
-              {selectedAccomodation.tags.map((tag) => <Tag key={tag} tagTxt={tag}></Tag>)}
+            <div className='main-contener'>
+              <div className='main-contener_left'>
+                <h1 className='main-contener_left_title'>{selectedAccomodation.title}</h1>
+                <p className='main-contener_left_location'>{selectedAccomodation.location}</p>
+
+                <div className='main-contener_left_tags'>
+                  {selectedAccomodation.tags.map((tag) => <Tag key={tag} tagTxt={tag}></Tag>)}
+                </div>
+              </div>
+
+              <div className='main-contener_right'>
+                <Host host={selectedAccomodation.host}></Host>
+                <Rating rating={selectedAccomodation.rating}></Rating>
+              </div>
             </div>
-          </div>
+            
+            <div className='collapse-contener'>
+              <div className='collapse-contener_column'>
+                <Collapse collapseTitle="Description" collapseTxt={selectedAccomodation.description}/>
+              </div>
+              <div className='collapse-contener_column'>
+                <Collapse collapseTitle="Équipements" collapseTxt={selectedAccomodation.equipments.map((equ) => <p className='collapse_equipements' key={equ}>{equ}</p>)}/>
+              </div>
+            </div>
 
-          <div className='main-contener_right'>
-            <Host host={selectedAccomodation.host}></Host>
-            <Rating rating={selectedAccomodation.rating}></Rating>
           </div>
         </div>
-        
-        <div className='collapse-contener'>
-          <div className='collapse-contener_column'>
-            <Collapse collapseTitle="Description" collapseTxt={selectedAccomodation.description}/>
-          </div>
-          <div className='collapse-contener_column'>
-            <Collapse collapseTitle="Équipements" collapseTxt={selectedAccomodation.equipments.map((equ) => <p className='collapse_equipements' key={equ}>{equ}</p>)}/>
-          </div>
-        </div>
-
-      </div>
-      
+      }
     </div>
   )
 }

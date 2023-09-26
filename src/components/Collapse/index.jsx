@@ -1,4 +1,4 @@
-// React component
+// React
 import {useState} from 'react';
 
 // PropTypes
