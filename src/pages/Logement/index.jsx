@@ -41,7 +41,7 @@ function Logement() {
 
           <div className='fiche-logement'>
 
-            <Slideshow pictures={selectedAccomodation.pictures}/>
+            <div><Slideshow pictures={selectedAccomodation.pictures}/></div>
 
             <div className='main-contener'>
               <div className='main-contener_left'>

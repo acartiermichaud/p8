@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// Components
+// Component
 import MyRouter from './components/MyRouter'
 
 // Style

@@ -19,9 +19,9 @@ function Collapse({collapseTitle, collapseTxt}) {
       <div className='collapse_header'>
           <h1 className='collapse_title'>{collapseTitle}</h1>
           
-          <div className='collapse_button' opened={isOpen ? "true" : "false"} onClick={() => {isOpen ? setOpening(false) : setOpening(true)}}>
+          <button className='collapse_button' opened={isOpen ? "true" : "false"} onClick={() => {isOpen ? setOpening(false) : setOpening(true)}}>
             <img className='collapse_arrow' src={arrow} alt='clickable arrow'/>
-          </div>   
+          </button>   
       </div>
 
       <div className='collapse_content' opened={isOpen ? "true" : "false"}>{collapseTxt}</div>

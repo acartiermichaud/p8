@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 // Style
 import '../../styles/rating.scss'
 
-//Image
+//Images
 import starOrange from '../../assets/star-orange.png'
 import starGrey from '../../assets/star-gray.png'
 

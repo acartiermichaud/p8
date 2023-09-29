@@ -7,7 +7,7 @@ import APropos from '../../pages/APropos'
 import Logement from '../../pages/Logement'
 import Error from '../../pages/Error'
 
-// Components
+// Component
 import Footer from '../../components/Footer'
 
 // Style

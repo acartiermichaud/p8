@@ -14,10 +14,12 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding: 40px 110px 0 110px;
+    gap: 30px;
+    padding: 40px 110px;
     box-sizing: border-box;
 
     @media (max-width: 768px) {
-        padding: 40px 0 0 0;
+        gap: 20px;
+        padding: 20px 0;
     }
 }

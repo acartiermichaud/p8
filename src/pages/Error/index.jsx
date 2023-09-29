@@ -1,7 +1,7 @@
 // React component
 import {Link} from 'react-router-dom'
 
-// Components
+// Component
 import Header from '../../components/Header'
 
 // Style
