@@ -1,6 +1,6 @@
 // React
-import { useParams } from 'react-router-dom'
-import { Navigate } from "react-router-dom";
+import {useParams} from 'react-router-dom'
+import {Navigate} from 'react-router-dom'
 
 // Components
 import Header from '../../components/Header'
@@ -17,11 +17,14 @@ import '../../styles/logement-page.scss'
 import accomodations from '../../data/logements.json'
 
 
-function Logement() {
+function Logement () {
+
   const selectedId = useParams().id
   const selectedAccomodation = accomodations.filter((accomodation) => accomodation.id === selectedId)[0]
 
-  function checkId() {
+
+  // Function that check if the id exists in data
+  function checkId () {
     if (selectedAccomodation !== undefined) {
       return true
     }

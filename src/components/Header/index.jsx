@@ -7,11 +7,12 @@ import PropTypes from 'prop-types'
 // Style
 import '../../styles/header.scss'
 
-//Image
+// Image
 import homeLogo from '../../assets/home-logo.png'
 
 
-function Header({homeLink, aProposLink}) {
+function Header ({homeLink, aProposLink}) {
+  
   return (
     <div className='header'>
       <Link to='/'>

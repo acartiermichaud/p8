@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import '../../styles/host.scss'
 
 
-function Host({host}) {
+function Host ({host}) {
 
   return (
     <div className='host'>

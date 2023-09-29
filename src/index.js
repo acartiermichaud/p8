@@ -1,6 +1,6 @@
 // React
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 // Component
 import MyRouter from './components/MyRouter'

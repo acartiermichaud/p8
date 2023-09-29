@@ -22,6 +22,7 @@ $primary-color : #FF6060;
     &_txt {
         color: white;
         font-size: 14px;
+        white-space: nowrap;
 
         @media (max-width: 768px) {
             font-size: 10px;

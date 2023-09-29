@@ -1,5 +1,5 @@
 // React Router
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 // Pages
 import Home from '../../pages/Home'
@@ -15,6 +15,7 @@ import '../../styles/my-router.scss'
 
 
 function MyRouter () {
+  
   return (
     <Router>
       <div className='page-contener'>

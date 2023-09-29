@@ -16,8 +16,8 @@ import image from '../../assets/home-img.png'
 import accomodations from '../../data/logements.json'
 
 
-
-function Home() {
+function Home () {
+  
   return (
     <div className='home-page'>
       <Header homeLink='header_selected-link' aProposLink='header_not-selected-link'/>

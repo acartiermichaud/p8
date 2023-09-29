@@ -10,7 +10,8 @@ import '../../styles/a-propos-page.scss'
 import image from '../../assets/a-propos-img.png'
 
 
-function APropos() {
+function APropos () {
+  
   return (
     <div className='a-propos-page'>
       <Header homeLink='header_not-selected-link' aProposLink='header_selected-link'/>

@@ -6,6 +6,7 @@ import '../../styles/card.scss'
 
 
 function Card ({url, alt, title}) {
+  
   return (
     <div className='card'>
       <img className='card_image' src={url} alt={alt}></img>

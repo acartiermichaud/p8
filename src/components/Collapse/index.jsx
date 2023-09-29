@@ -1,5 +1,5 @@
 // React
-import {useState} from 'react';
+import {useState} from 'react'
 
 // PropTypes
 import PropTypes from 'prop-types'
@@ -11,7 +11,8 @@ import '../../styles/collapse.scss'
 import arrow from '../../assets/arrow.png'
 
 
-function Collapse({collapseTitle, collapseTxt}) {
+function Collapse ({collapseTitle, collapseTxt}) {
+
   const [isOpen, setOpening] = useState(false);
 
   return (

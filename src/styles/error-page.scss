@@ -25,12 +25,20 @@ $primary-color : #FF6060;
     }
 
     &_txt {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
         font-size: 36px;
         padding: 50px 0;
 
+        @media (max-width: 1085px) {
+            flex-direction: column;
+        }
+
         @media (max-width: 768px) {
+            gap: 5px;
             font-size: 18px;
-            padding: 20px 50px;
+            padding: 20px 0;
         }
     }
 

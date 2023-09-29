@@ -6,6 +6,7 @@ import '../../styles/banner.scss'
 
 
 function Banner ({url, alt, title}) {
+  
   return (
     <div className='banner'>
       <img className='banner_image' src={url} alt={alt}></img>

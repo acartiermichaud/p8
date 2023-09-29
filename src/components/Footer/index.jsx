@@ -5,7 +5,8 @@ import '../../styles/footer.scss'
 import footerLogo from '../../assets/footer-logo.png'
 
 
-function Footer() {
+function Footer () {
+  
   return (
     <div className='footer'>
         <img className='footer_logo' src={footerLogo} alt='Logo de Kasa'/>
