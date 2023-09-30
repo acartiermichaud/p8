@@ -70,7 +70,7 @@ function Slideshow ({pictures}) {
       <img className={`slideshow_image slideshow_image_current slideshow_image_current_mvt-${mvt}`} src={pictures[position]} alt="Logement"></img>
       <img className={`slideshow_image slideshow_image_previous slideshow_image_previous_mvt-${mvt}`} src={pictures[oldPosition]} alt="Logement"></img>
 
-      <p className='slideshow_page-numbers'>{total > position && `${position+1}/${total}`}</p>
+      {total > 1 && <p className='slideshow_page-numbers'>{total > position && `${position+1}/${total}`}</p>}
     </div>
   )
 }
