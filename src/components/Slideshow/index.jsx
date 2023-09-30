@@ -50,7 +50,7 @@ function Slideshow ({pictures}) {
   // Function that displays sliding then initializes mvt variable
   function sliding (direction) {
     setMvt(direction)
-    setTimeout(() => {setMvt('none')}, 500)
+    setTimeout(() => {setMvt('none')}, 700)
   }
   
 
