@@ -64,11 +64,11 @@ function Slideshow ({pictures}) {
   return (
     <div className='slideshow'>
 
-      {total > 1 && <img className='slideshow_arrow slideshow_arrow_forward' src={arrow_forward} alt="Suivante" onClick={() => handleArrowClick("forward")}></img>}
-      {total > 1 && <img className='slideshow_arrow slideshow_arrow_back' src={arrow_back} alt="Précédente" onClick={() => handleArrowClick("back")}></img>}
-
       <img className={`slideshow_image slideshow_image_current slideshow_image_current_mvt-${mvt}`} src={pictures[position]} alt="Logement"></img>
       <img className={`slideshow_image slideshow_image_previous slideshow_image_previous_mvt-${mvt}`} src={pictures[oldPosition]} alt="Logement"></img>
+
+      {total > 1 && <img className='slideshow_arrow slideshow_arrow_forward' src={arrow_forward} alt="Suivante" onClick={() => handleArrowClick("forward")}></img>}
+      {total > 1 && <img className='slideshow_arrow slideshow_arrow_back' src={arrow_back} alt="Précédente" onClick={() => handleArrowClick("back")}></img>}
 
       {total > 1 && <p className='slideshow_page-numbers'>{total > position && `${position+1}/${total}`}</p>}
     </div>
