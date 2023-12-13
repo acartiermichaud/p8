@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f3976e3.css",
+    "main.js": "/static/js/main.22544ab1.js",
+    "static/media/a-propos-img.png": "/static/media/a-propos-img.ff792b49fbd354c112d9.png",
+    "static/media/home-img.png": "/static/media/home-img.ac37278c5b79a28a23e2.png",
+    "index.html": "/index.html",
+    "main.0f3976e3.css.map": "/static/css/main.0f3976e3.css.map",
+    "main.22544ab1.js.map": "/static/js/main.22544ab1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f3976e3.css",
+    "static/js/main.22544ab1.js"
+  ]
+}
