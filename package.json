@@ -2,7 +2,7 @@
   "name": "p8",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://acartiermichaud.github.io/p8",
+  "homepage": "https://acartiermichaud.github.io/p8/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
