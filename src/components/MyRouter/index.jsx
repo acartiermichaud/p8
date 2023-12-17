@@ -20,7 +20,7 @@ function MyRouter () {
     <Router>
       <div className='page-contener'>
         <div className='page'>
-          <Routes>
+          <Routes basename={process.env.PUBLIC_URL}>
             <Route path="/" element={<Home />} errorElement={<Error />}/>
             <Route path="/a-propos" element={<APropos />} errorElement={<Error />}/>
             <Route path="/logement/:id" element={<Logement />} errorElement={<Error />}/>
