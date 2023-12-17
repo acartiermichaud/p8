@@ -25,7 +25,7 @@ function MyRouter () {
             <Route path="/a-propos" element={<APropos />} errorElement={<Error />}/>
             <Route path="/logement/:id" element={<Logement />} errorElement={<Error />}/>
             <Route path="/error" element={<Error />} errorElement={<Error />}/>
-            <Route path="*" element={<Error />} errorElement={<Error />}/>
+            {/* <Route path="*" element={<Error />} errorElement={<Error />}/> */}
           </Routes>
           <Footer />
         </div>
