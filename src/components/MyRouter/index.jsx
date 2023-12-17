@@ -1,5 +1,5 @@
 // React Router
-import {BrowserRouter as Router, Route, Routes, HashRouter} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 // Pages
 import Home from '../../pages/Home'
@@ -18,20 +18,18 @@ function MyRouter () {
   
   return (
     <Router>
-      <HashRouter basename="/">
-        <div className='page-contener'>
-          <div className='page'>
-            <Routes>
-              <Route path="/" element={<Home />} errorElement={<Error />}/>
-              <Route path="/a-propos" element={<APropos />} errorElement={<Error />}/>
-              <Route path="/logement/:id" element={<Logement />} errorElement={<Error />}/>
-              <Route path="/error" element={<Error />} errorElement={<Error />}/>
-              {/* <Route path="*" element={<Error />} errorElement={<Error />}/> */}
-            </Routes>
-            <Footer />
-          </div>
+      <div className='page-contener'>
+        <div className='page'>
+          <Routes>
+            <Route path="" element={<Home />} errorElement={<Error />}/>
+            <Route path="/a-propos" element={<APropos />} errorElement={<Error />}/>
+            <Route path="/logement/:id" element={<Logement />} errorElement={<Error />}/>
+            <Route path="/error" element={<Error />} errorElement={<Error />}/>
+            {/* <Route path="*" element={<Error />} errorElement={<Error />}/> */}
+          </Routes>
+          <Footer />
         </div>
-      </HashRouter>
+      </div>
     </Router>
   )
 }
