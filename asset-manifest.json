@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/p8/static/css/main.0f3976e3.css",
-    "main.js": "/p8/static/js/main.35f47cb9.js",
+    "main.js": "/p8/static/js/main.d5774ceb.js",
     "static/media/a-propos-img.png": "/p8/static/media/a-propos-img.ff792b49fbd354c112d9.png",
     "static/media/home-img.png": "/p8/static/media/home-img.ac37278c5b79a28a23e2.png",
     "index.html": "/p8/index.html",
     "main.0f3976e3.css.map": "/p8/static/css/main.0f3976e3.css.map",
-    "main.35f47cb9.js.map": "/p8/static/js/main.35f47cb9.js.map"
+    "main.d5774ceb.js.map": "/p8/static/js/main.d5774ceb.js.map"
   },
   "entrypoints": [
     "static/css/main.0f3976e3.css",
-    "static/js/main.35f47cb9.js"
+    "static/js/main.d5774ceb.js"
   ]
 }
