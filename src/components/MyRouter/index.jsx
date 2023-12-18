@@ -17,15 +17,15 @@ import '../../styles/my-router.scss'
 function MyRouter () {
   
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className='page-contener'>
         <div className='page'>
           <Routes>
-            <Route path="" element={<Home />} errorElement={<Error />}/>
+            <Route path="/" element={<Home />} errorElement={<Error />}/>
             <Route path="/a-propos" element={<APropos />} errorElement={<Error />}/>
             <Route path="/logement/:id" element={<Logement />} errorElement={<Error />}/>
             <Route path="/error" element={<Error />} errorElement={<Error />}/>
-            {/* <Route path="*" element={<Error />} errorElement={<Error />}/> */}
+            <Route path="*" element={<Error />} errorElement={<Error />}/>
           </Routes>
           <Footer />
         </div>
